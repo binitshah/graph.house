@@ -18,24 +18,22 @@ An exportable website can be found in the build folder.
 
 TODO
 ----
-1. Create an logo
-3. An About Us/Services section
-    - Add in a tidbit about Recruiting
-4. From there, you can scroll down to Portfolio
-    - Each project has:
+1. Don't worry about the waterfall logo. I'll replace it soon.
+2. Link 'Work With Us' button to the contact us form section.
+3. Link 'Join The Team' button to the google form that we're using for recruiting.
+4. Populate the projects in the carousel with proper details
+    - This includes:
         - Name
-        - Description
-        - Dates
-        - Thumbnail Icons
         - Tags
-        - links
-5. Then at the bottom is a Contact Us form
-6. Some sort of navigation
-7. A scroll up button
-8. A bar at the bottom that has:
-    - Recruiting
-    - Scroll to top
-    - Copyright
+        - Description
+        - Background photo
+        - Link button to another site
+5. Shift 'convinced? then..' to the left to match the indent of the contact us form.
+6. Remove the 'reason for contacting' part of the form.
+7. Add functionality to send the email to both us and them.
+8. A scroll up button in the bottom nav bar. extra points, if it's position fixed to the buttom and only appears after the user scrolls past the top.
+9. Add media queries to resize the contact us form for mobile.
+10. Add media queries for the carousel so it resizes properly for mobile.
 
 Finished
 --------
