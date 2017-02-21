@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Graph House</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/global.css">
+    </head>
+    <body>
+        <div class="logo"> <!--https://dribbble.com/shots/2235911-Writing-cabin-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300px" height="300px" viewBox="0 0 600 600" >
+                <defs>
+                    <circle id="outer" fill="none" stroke="#D17454" stroke-width="12" stroke-miterlimit="10" cx="293" cy="278.7" r="138"/>
+                    <path id="waterfall" fill="#7EE7F9" d="M338.5,116.9c8.5,0,7.3,3.9,15.8,7.3c4.9,1.9,12.2,1.8,16,6.5c3.2,3.9,1.9,10.4,2.6,17
+                        c1,9.7,7.1,34.4,9.3,63.4c1.6,20.7-0.6,43.7,0.9,64.2c2.7,35.3,13.6,32.4,8.7,64c-2.8,18.2-11.6,11.4-30.5,22.1
+                        c-9.1,5.2-19.4,13.4-33.5,15.5c-10.7,1.6-22.9-2.2-36.7-4.3c-12.1-1.8-23.6,0.1-33.1-2.1c-12.7-2.9-22.2-9.7-30.6-12.5
+                        c-21.4-7.2-29.4,5.1-32.6-11c-6.2-31.6,5.7-28.9,7.7-64.6c1.2-20.5-1.6-43.5-0.6-64.5c1.3-27.3,6.3-51.5,6.3-64.2
+                        c0.6-7.8-1.2-14.9,1.5-19.6c3.8-6.5,11.6-7.6,16.8-9.9c9.6-4.2,8.5-7.3,18.2-7c15.6,0.4,15.5,4,31.1,4c15.6,0,15.5-3.3,31.1-4
+                        C322.9,116.2,322.9,116.9,338.5,116.9z"/>
+                    <clipPath id="mainMask">
+                        <use xlink:href="#outer"/>
+                    </clipPath>
+                    <clipPath id="waterfallMask">
+                        <use xlink:href="#waterfall"/>
+                    </clipPath>  
+                    <circle id="foam" cx="180" cy="333.7" r="17.7"/> 
+                    
+                    <radialGradient id="bgGrad" cx="300" cy="300" r="300" gradientUnits="userSpaceOnUse">
+                        <stop  offset="0.2" style="stop-color:#ffffff"/>
+                        <stop  offset="1" style="stop-color:#eeeeee"/>
+                    </radialGradient>  
+                </defs>
+
+                <rect id="bgGrad" fill="url(#bgGrad)" width="600" height="600"/>  
+                <polygon id="shadow" fill="url(#mainShadowGrad)" points="188.8,395 385.6,153.4 599.5,303 591.5,585 421,589 "/>  
+                <circle class="outer" fill="#F5E9C1" cx="293" cy="278.7" r="156"/>  
+                <g class="mainGroup" clip-path="url(#mainMask)">  
+                    <path class="land" fill="#957660" d="M464,372H124c0,0,0-151,0-189.3c28.3-28.3,340,0,340,0V432.8z"/>
+                    <path class="landShadow" fill="#74584A" d="M511,450H65c0,0,0-151,0-189.3c180,53.4,347-23.4,446,0C511,377.8,511,507.8,511,507.8
+                        z"/>
+                    <use xlink:href="#waterfall"/>
+                    <g class="rippleMasked" clip-path="url(#waterfallMask)">
+                        <path class="ripple" fill="#6ADFF7" d="M557.5,108c-23.8,0-36.6-6.8-46.9-12.4c-8.3-4.4-14.3-7.6-28.1-7.6s-19.8,3.2-28.1,7.6
+                            c-10.3,5.5-23.2,12.4-46.9,12.4s-36.6-6.8-46.9-12.4c-8.3-4.4-14.3-7.6-28.1-7.6s-19.8,3.2-28.1,7.6c-10.3,5.5-23.2,12.4-46.9,12.4
+                            c-23.7,0-36.8-6.8-47.2-12.4C202,91.2,196,88,182,88V48c24,0,36.8,6.8,47.2,12.4c8.3,4.4,14.5,7.6,28.2,7.6
+                            c13.7,0,19.8-3.2,28.1-7.6c10.3-5.5,23.2-12.4,46.9-12.4c23.8,0,36.6,6.8,46.9,12.4c8.3,4.4,14.3,7.6,28.1,7.6
+                            c13.8,0,19.8-3.2,28.1-7.6c10.3-5.5,23.2-12.4,46.9-12.4s36.6,6.8,46.9,12.4c8.3,4.4,14.3,7.6,28.1,7.6s19.5-3.2,27.8-7.6
+                            C595.7,54.8,609,48,632,48v40c-13,0-19.5,3.2-27.8,7.6C593.8,101.2,581.2,108,557.5,108z"/>
+                    </g>
+                </g>
+                <g class="maskedFoam" clip-path="url(#mainMask)">
+                    <g class="whiteFoamGroup">
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                    </g>    
+                    <g class="lightBlueFoamGroup">
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                    </g> 
+                    <g class="darkBlueFoamGroup">
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                        <use xlink:href="#foam"/>
+                    </g>  
+                </g>
+                <g class="badgeGroup">
+                    <circle class="inner" fill="none" stroke="#D17454" stroke-width="12" stroke-miterlimit="10" cx="293" cy="278.7" r="138"/>
+                </g>  
+                <g class="splashGroup">
+                    <use xlink:href="#foam"/>
+                    <use xlink:href="#foam"/>
+                    <use xlink:href="#foam"/>
+                    <use xlink:href="#foam"/>
+                    <use xlink:href="#foam"/>
+                    <use xlink:href="#foam"/>
+                    <use xlink:href="#foam"/>
+                    <use xlink:href="#foam"/>
+                </g>  
+            </svg>
+        </div>
+        <div class="homepage">
+            <h1><strong>GRAPH HOUSE</strong></h1>
+            <a class="button button-primary" href="#">Work with us</a>
+            <a class="button" href="#">Join our Team</a>
+        </div>
+        <div class="content">
+            <h2><strong>Hi! We're <i>Graph House</i></strong></h2>
+            <p style="font-size: 2rem;">An agency composed of designers, developers and producers. We provide creative services and marketing solutions to startups based near Atlanta. And best of all, we're entirely composed of students from Georgia Tech.</p>
+            <p style="font-size: 2rem;">Our goal is simple. We want to provide you the marketing services you need at the price you can <i>afford</i>. There's a reason why some of Atlanta's best trust us with their design work. See for yourself.</p>
+            <br>
+            <div class="portfolio owl-carousel">
+                <div class="item">
+                    <div class="project">
+                        <div class="projectContent">
+                            <div class="thumbnailContainer">
+                                <img src="img/img3.jpg" alt="Owl Image">
+                                <div class="tint"></div>
+                            </div>
+                            <h3 style="font-size: 30px; margin: 0px; margin-top: 10px; text-transform: uppercase; color: #272727">Project 1</h3>
+                            <p style="color: #777777; font-size: 13px; margin: 0px;">Photography / Design</p>
+                            <div class="description">
+                                Lorem ipsum dolor et eum nom soup jor quantum ret. Que es cuando lo siento. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret.
+                            </div>
+                            <a class="button" href="#">Action!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="project">
+                        <div class="projectContent">
+                            <div class="thumbnailContainer">
+                                <img src="img/img2.jpg" alt="Owl Image">
+                                <div class="tint"></div>
+                            </div>
+                            <h3 style="font-size: 30px; margin: 0px; margin-top: 10px; text-transform: uppercase; color: #272727">Project 1</h3>
+                            <p style="color: #777777; font-size: 13px; margin: 0px;">Photography / Design</p>
+                            <div class="description">
+                                Lorem ipsum dolor et eum nom soup jor quantum ret. Que es cuando lo siento. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret.
+                            </div>
+                            <a class="button" href="#">Action!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="project">
+                        <div class="projectContent">
+                            <div class="thumbnailContainer">
+                                <img src="img/img1.jpg" alt="Owl Image">
+                                <div class="tint"></div>
+                            </div>
+                            <h3 style="font-size: 30px; margin: 0px; margin-top: 10px; text-transform: uppercase; color: #272727">Project 1</h3>
+                            <p style="color: #777777; font-size: 13px; margin: 0px;">Photography / Design</p>
+                            <div class="description">
+                                Lorem ipsum dolor et eum nom soup jor quantum ret. Que es cuando lo siento. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret.
+                            </div>
+                            <a class="button" href="#">Action!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="project">
+                        <div class="projectContent">
+                            <div class="thumbnailContainer">
+                                <img src="img/img4.jpg" alt="Owl Image">
+                                <div class="tint"></div>
+                            </div>
+                            <h3 style="font-size: 30px; margin: 0px; margin-top: 10px; text-transform: uppercase; color: #272727">Project 1</h3>
+                            <p style="color: #777777; font-size: 13px; margin: 0px;">Photography / Design</p>
+                            <div class="description">
+                                Lorem ipsum dolor et eum nom soup jor quantum ret. Que es cuando lo siento. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret. Lorem ipsum dolor et eum nom soup jor quantum ret.
+                            </div>
+                            <a class="button" href="#">Action!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Convinced? Great! Drop us a line.</h2>
+            <br>
+            <form style="padding-left: 150px; padding-right: 150px;">
+                <div class="row">
+                    <div class="six columns">
+                        <label for="exampleEmailInput">Your email</label>
+                        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    </div>
+                    <div class="six columns">
+                        <label for="exampleRecipientInput">Reason for contacting</label>
+                        <select class="u-full-width" id="exampleRecipientInput">
+                            <option value="Option 1">Services</option>
+                            <option value="Option 2">Recruitment</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="exampleMessage">Message</label>
+                <textarea class="u-full-width" placeholder="Hi! My name is..." id="exampleMessage"></textarea>
+                <label class="example-send-yourself-copy">
+                    <input type="checkbox">
+                    <span class="label-body">Send a copy to yourself</span>
+                </label>
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+
+            <div class="footer">
+                <div class="copyright">
+                    © 2017 Graph House Inc.
+                </div>
+            </div>
+        </div>
+
+        <script src="js/production.js"></script>
+    </body>
+</html>
