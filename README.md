@@ -18,9 +18,8 @@ An exportable website can be found in the build folder.
 
 TODO
 ----
-1. Don't worry about the waterfall logo. I'll replace it soon.
-2. Link 'Work With Us' button to the contact us form section.
-3. Link 'Join The Team' button to the google form that we're using for recruiting.
+**Critical**
+
 4. Populate the projects in the carousel with proper details
     - This includes:
         - Name
@@ -28,6 +27,12 @@ TODO
         - Description
         - Background photo
         - Link button to another site
+
+**Less Critical**
+
+1. Make a logo.
+2. Link 'Work With Us' button to the contact us form section.
+3. Link 'Join The Team' button to the google form that we're using for recruiting.
 5. Shift 'convinced? then..' to the left to match the indent of the contact us form.
 6. Remove the 'reason for contacting' part of the form.
 7. Add functionality to send the email to both us and them.
