@@ -246,21 +246,21 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  color: #3d3a34;
 }
 
 a {
-  color: #1eaedb;
+  color: #ec2331;
 }
 a:hover {
-  color: #1b9cc5;
+  color: #e21422;
 }
 
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid #edecec;
 }
 
 .u-full-width {
@@ -609,40 +609,40 @@ input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focu
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
+  background-color: #ec2331;
+  border-color: #ec2331;
 }
 
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0;
+  background-color: #ec2331;
+  border-color: #ec2331;
 }
 
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
+  background-color: #ec2331;
+  border-color: #ec2331;
 }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
+  background-color: #ec2331;
+  border-color: #ec2331;
 }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
+  background-color: #ec2331;
+  border-color: #ec2331;
 }
 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb;
+  background-color: #ec2331;
+  border-color: #ec2331;
 }
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
@@ -681,13 +681,13 @@ textarea {
 }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid #ec2331;
   outline: 0;
 }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid #ec2331;
   outline: 0;
 }
 
@@ -746,8 +746,8 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
+  background: #fdfdfd;
+  border: 1px solid #edecec;
   border-radius: 4px;
 }
 
@@ -761,7 +761,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #edecec;
 }
 
 th:first-child,
@@ -820,9 +820,15 @@ a:hover, a:focus {
   color: #0067b5;
 }
 
-svg {
-  max-width: 100%;
-  visibility: hidden;
+#form {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+@media screen and (max-width: 800px) {
+  #form {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .logo {
@@ -843,12 +849,29 @@ svg {
   padding: 6rem;
 }
 
+#logoimg {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 500px) {
+  #logoimg {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .project {
   width: 400px;
   height: 400px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .project {
+    width: 275px;
+    height: 400px;
+  }
 }
 .project .projectContent {
   display: inline-block;
@@ -871,6 +894,11 @@ svg {
   -webkit-transition: height 200ms ease-out;
   -o-transition: height 200ms ease-out;
   transition: height 200ms ease-out;
+}
+@media screen and (max-width: 500px) {
+  .project .projectContent .thumbnailContainer {
+    height: 180px;
+  }
 }
 .project .projectContent .thumbnailContainer img {
   min-height: 100%;

@@ -25,9 +25,14 @@ a {
     }
 }
 
-svg{
-    max-width:100%;
-    visibility:hidden;
+#form {
+    padding-left: 150px;
+    padding-right: 150px;
+
+    @media screen and (max-width: 800px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 .logo {
@@ -48,12 +53,27 @@ svg{
     padding: $spacing;
 }
 
+#logoimg {
+    width: 300px;
+    height: 300px;
+
+    @media screen and (max-width: 500px) {
+        width: 250px;
+        height: 250px;
+    }
+}
+
 .project {
     width: 400px;
     height: 400px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+
+    @media screen and (max-width: 500px) {
+        width: 275px;
+        height: 400px;
+    }
 
     .projectContent {
         display: inline-block;
@@ -76,6 +96,10 @@ svg{
             -webkit-transition: height 200ms ease-out;
             -o-transition: height 200ms ease-out;
             transition: height 200ms ease-out;
+
+            @media screen and (max-width: 500px) {
+                height: 180px;
+            }
 
             img {
                 min-height: 100%;
@@ -100,7 +124,7 @@ svg{
             -webkit-transition: height 200ms ease-out;
             -o-transition: height 200ms ease-out;
             transition: height 200ms ease-out;
-
+            
             .thumbnailContainer {
                 height: 100px;
                 -moz-transition: height 200ms ease-out;
